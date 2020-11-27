@@ -4,62 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script  src="form2.js"> </script>
 </head>
 <body>
     <h1>АНКЕТА</h1>
     <form>
         
 <p>Фамилия
-    <input type="text">
+    <input type="text" name="surname">
 </p>
 <p>Имя
-    <input type="text">
+    <input type="text" name="name">
 </p>
 <p>Отчество
-    <input type="text">
+    <input type="text" name="middle_name">
 </p>
 <p>
     <label>Пол
-<input name="sex" type="radio" value="man">Мужской
-<input name="sex" type="radio" value="woman">Женский
+<input name="sex" type="radio" value="1">Мужской
+<input name="sex" type="radio" value="2">Женский
     </label>
     <p>Дата рождения
-        <input type="date" value="calendar">
+        <input type="date" value="calendar" name="date_of_birth">
 </p>
 </p>
 <p>Колличество полных лет
-    <input type="number" value="18" min="1" max="99">
+    <input type="number" value="18" min="18" max="63" name="age">
 </p>
 <p>Адресс места жительства(пребывания)
-    <input type="text">
+    <input type="text" name="address">
 </p>
 <p>Номер контактного телефона
-    +375<input type="text">
+    +375<input type="text" name="phone_number">
 </p>
 <p>Контактный e-mail
-    <input type="text">
+    <input type="text" name="email">
 </p>
 <p>
     <label> Образование
-        <input name="puple" type="radio" value="high">Высшее
-        <input name="puple" type="radio" value="midle">Среднее
-        <input name="puple" type="radio" value="start">Начальное
+        <input name="education" type="radio" value="1">Высшее
+        <input name="education" type="radio" value="2">Среднее
+        <input name="education" type="radio" value="3">Начальное
     </label>
 </p>
 <p>Профессия(специальность)
-    <input type="text">
+    <input type="text" name="professional">
 </p>
 <p>Стаж работы по специальности
-    <input type="text" list="old">
+    <input type="text" list="old" name="experience">
     <datalist id="old">
       <option value="Менее года">
           <option value="1-3 года">
         <option value="3-5 лет">
         <option value="5-10 лет">
+            <option value="Более 15">
+
+            </option>
     </datalist>
     <p>Предыдущее место работы
-        <input type="text">
+        <input type="text" name="prior_work">
     </p>
+</p>
+<p>Период работы на предыдущем месте
+    c <input type="date" value="calendar">
+    по <input type="date" value="calender">
+</p>
+<p>
+    <input type="button" value="Очистить форму">
+    <input type="button" value="Отправить данные"  onclick="checkForm()">
 </p>
     </form>
     
