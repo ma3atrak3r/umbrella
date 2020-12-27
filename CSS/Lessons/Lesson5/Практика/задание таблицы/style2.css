@@ -1,0 +1,20 @@
+td:hover::after {
+background-color: rgba(140, 140, 255, 0.4);
+content: "";
+position: absolute;
+height: 2000vh;
+left: 0;
+top: -1000vh;
+width: 100%;
+z-index: -1;
+}
+
+td {
+    position: relative;
+}
+table {
+    overflow: hidden;
+}
+tr:hover {
+background-color: rgba(140, 140, 255, 0.4);
+}

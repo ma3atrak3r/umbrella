@@ -1,0 +1,15 @@
+table {
+    caption-side: top;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+td {
+    border: 1px solid black;
+}
+table + table {
+    caption-side: bottom;
+    margin-top: 20px;
+    border-collapse: separate;
+    border-spacing: 3px;
+    empty-cells: hide;
+}
