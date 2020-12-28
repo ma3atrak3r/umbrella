@@ -1,0 +1,22 @@
+a, a:visited {
+    display: block;
+    margin: 20px;
+    padding: 10px;
+    background: linear-gradient(to top, #4fbd24, #41ec03);
+}
+a:hover {
+    background: linear-gradient(to top, #f9a80c, #fbc157);
+}
+a:active {
+    background: linear-gradient(to top, #f9cd66, #fae069);
+}
+a {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  max-width: 200px;
+  outline: 1px white solid;
+  outline-offset: -4px;
+}
